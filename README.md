@@ -3,7 +3,7 @@
 **A multimodal Retrieval-Augmented Generation (RAG) system for Persian multiple-choice questions about Iranian athletes.**
 It builds **text & image indexes** (SentenceTransformers + OpenCLIP), performs **score-level fusion** for retrieval, and supports **generative answer selection** with evidence. Includes full evaluation scripts for both **text-only** and **image-based** MCQs.
 
-> 📄 A detailed Persian write-up is included in the repo (see `docs/NLP_HW3_Report_Final_Persian.pdf`). Key design choices, pipeline diagrams, and results are summarized there. 
+> A detailed Persian write-up is included in the repo (see `docs/NLP_HW3_Report_Final_Persian.pdf`). Key design choices, pipeline diagrams, and results are summarized there. 
 
 ---
 
@@ -33,7 +33,6 @@ It builds **text & image indexes** (SentenceTransformers + OpenCLIP), performs *
 * [Model & Data Licenses](#model--data-licenses)
 * [Citation](#citation)
 * [Acknowledgments](#acknowledgments)
-* [License](#license)
 
 ---
 
@@ -55,14 +54,14 @@ The approach and key findings are also discussed in the Persian report.
 
 ## Main Features
 
-* ✅ **Persian-friendly normalization** (digits, Arabic vs Persian letters, ZWNJ/RTL marks)
-* ✅ **Multilingual E5** (`intfloat/multilingual-e5-base`) for robust **text retrieval**
-* ✅ **OpenCLIP ViT-B/32** (`laion2b_s34b_b79k`) for **image** and **text→image** retrieval
-* ✅ **FAISS** indexing with **HNSW** fallback if FAISS isn’t available
-* ✅ **Late fusion** (`alpha`-weighted) of text & image scores
-* ✅ **MCQ pipelines** for both **text-only** and **image-based** questions
-* ✅ **Generative phase** producing **JSON** answers with **evidence** + optional **bio**
-* ✅ **End-to-end evaluation**: per-set accuracy, category breakdowns, confusion tables, and plots
+* **Persian-friendly normalization** (digits, Arabic vs Persian letters, ZWNJ/RTL marks)
+* **Multilingual E5** (`intfloat/multilingual-e5-base`) for robust **text retrieval**
+* **OpenCLIP ViT-B/32** (`laion2b_s34b_b79k`) for **image** and **text→image** retrieval
+* **FAISS** indexing with **HNSW** fallback if FAISS isn’t available
+* **Late fusion** (`alpha`-weighted) of text & image scores
+* **MCQ pipelines** for both **text-only** and **image-based** questions
+* **Generative phase** producing **JSON** answers with **evidence** + optional **bio**
+* **End-to-end evaluation**: per-set accuracy, category breakdowns, confusion tables, and plots
 
 ---
 
@@ -118,22 +117,46 @@ The report gives more details and qualitative analysis of text vs. image vs. fus
 ## Data & Expected Layout
 
 ```
-/<your-base>/
-  athlete_merged_with_bios_imaged_crawled.json   # catalog of athletes; names + bios (+ possibly mixed-language)
-  athlete_images/                                 # athlete images, any common image format
-  mcq_questions_full.json                         # text-only MCQs (question, options[], answer)
-  mcq_questions_full_new.json                     # updated text-only MCQs (used in later sections)
-  qa_with_image_new.json                          # multimodal MCQs; includes image_url per question
-
-  rag_out/                                        # created by the notebook
-    faiss_text.idx / faiss_text.bin               # text index (FAISS or HNSW)
-    faiss_image.idx / faiss_image.bin             # image index (FAISS or HNSW)
-    docs.jsonl                                    # one row per doc with mapping info
-    text_mcq_top3_results.csv                     # retrieval-derived scoring for text MCQs
-    Multimodal_mcq_results_top3.csv               # retrieval-derived scoring for image MCQs
-    Text_set_generative_outputs.csv               # JSON outputs for text set
-    Multimodal_set_generative_outputs.csv         # JSON outputs for multimodal set
-    evaluation/                                   # produced in the Evaluation step (csv + plots)
+/ (repo root)
+├── Data/
+│   ├── athlete_merged_with_bios_imaged_crawled.json        # consolidated catalog (names + bios + image info)
+│   ├── Questions/
+│   │   ├── mcq_questions_full_new.json                     # TEXT MCQs (question, options[], answer)
+│   │   └── qa_with_image_new.json                          # MULTIMODAL MCQs (includes image_url per item)
+│   └── Raw data/
+│       ├── athlete17.json                                  # raw sources (examples)
+│       └── athlete19.json
+├── Results/                                                # all artifacts produced by the notebook
+│   ├── Final embeddings/
+│   │   ├── faiss_text.idx
+│   │   ├── faiss_image.idx
+│   │   ├── docs.jsonl
+│   │   ├── clip_text.idx
+│   │   └── clip_text_rows.json
+│   ├── Retrieval_results/
+│   │   ├── text_mcq_top3_results.csv
+│   │   └── Multimodal_mcq_results_top3.csv
+│   ├── Generative_results/
+│   │   ├── Text_set_generative_outputs.csv
+│   │   └── Multimodal_set_generative_outputs.csv
+│   └── Final_evaluation/
+│       ├── evaluation_RAG/                                 # final metrics & plots
+│       │   ├── eval_summary.csv
+│       │   ├── text_eval_detailed.csv
+│       │   ├── multi_eval_detailed.csv
+│       │   ├── accuracy_overview.png
+│       │   ├── text_accuracy_by_category.png
+│       │   └── multi_accuracy_by_category.png
+│       ├── evaluation_baseline/                            # baseline metrics & plots
+│       │   ├── baseline_accuracy_overview.png
+│       │   ├── summary_text_baseline.csv
+│       │   └── summary_multimodal_baseline.csv
+│       └── evaluation_compare/                             # side-by-side comparisons
+│           └── compare_accuracy_overview.png
+├── Athlete_multimodal_RAG_Final.ipynb
+├── NLP_HW3_Report_Final_Persian.pdf
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -360,13 +383,27 @@ for d in hits:
 
 ```
 .
-├── Athlete_multimodal_RAG_Final.ipynb
-├── data/                                   # (optional) where you keep raw JSONs/images
-├── rag_out/                                 # created by the notebook
-├── docs/
-│   └── NLP_HW3_Report_Final_Persian.pdf     # Persian report with design + results
+├── Data/
+│   ├── Questions/
+│   │   ├── mcq_questions_full_new.json
+│   │   └── qa_with_image_new.json
+│   ├── Raw data/
+│   │   ├── athlete17.json
+│   │   └── athlete19.json
+│   └── athlete_merged_with_bios_imaged_crawled.json
+├── Results/
+│   ├── Final embeddings/               # faiss_text.idx, faiss_image.idx, docs.jsonl, clip_text.*
+│   ├── Retrieval_results/              # text_mcq_top3_results.csv, Multimodal_mcq_top3_results.csv
+│   ├── Generative_results/             # Text_set_generative_outputs.csv, Multimodal_set_generative_outputs.csv
+│   └── Final_evaluation/
+│       ├── evaluation_RAG/             # final CSVs + PNG plots
+│       ├── evaluation_baseline/        # baseline CSVs + PNGs
+│       └── evaluation_compare/         # comparison PNGs
+├── Athlete_multimodal_RAG_Final.ipynb   # end-to-end pipeline (Colab-friendly)
+├── NLP_HW3_Report_Final_Persian.pdf     # Persian report
 ├── README.md
 └── LICENSE
+
 ```
 
 ---
