@@ -452,6 +452,6 @@ If you use this repo, please cite:
 
 ## Team
 
-- **Sina Beyrami** — Lead engineering & pipeline integration  
-- **Sina Daneshgar** — Retrieval & evaluation framework  
-- **Elahe Zahiri** — Data curation, normalization & analysis
+- **Sina Beyrami**
+- **Sina Daneshgar**
+- **Elahe Zahiri**
