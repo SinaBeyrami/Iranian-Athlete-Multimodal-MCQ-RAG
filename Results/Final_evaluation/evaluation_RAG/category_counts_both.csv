@@ -1,0 +1,11 @@
+﻿category,count,set
+sport,18,text
+where/birthplace,14,text
+other,8,text
+team/club,7,text
+when/age,1,text
+who,14,multimodal
+sport,3,multimodal
+where/birthplace,1,multimodal
+when/age,1,multimodal
+which-option,1,multimodal

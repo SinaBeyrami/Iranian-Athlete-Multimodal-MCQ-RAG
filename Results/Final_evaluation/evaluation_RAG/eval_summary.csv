@@ -1,0 +1,3 @@
+﻿set,n,accuracy,evidence_present_rate,evidence_mentions_gold_rate
+text,48,1.0,1.0,0.8125
+multimodal,20,0.8,1.0,0.2

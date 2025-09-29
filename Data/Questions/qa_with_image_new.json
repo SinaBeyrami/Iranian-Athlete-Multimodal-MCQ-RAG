@@ -1,0 +1,224 @@
+[
+    {
+        "question": "این چهره ی چه کسی است؟",
+        "options": [
+            "علی دایی",
+            "آرش افشین",
+            "محسن بیرانوند",
+            "محمد خادم"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.f19cd7c574fb1ceb37d0dd7557333735?rik=lLL0kQFoooPrMA&pid=ImgRaw&r=0",
+        "answer": "علی دایی"
+    },
+    {
+        "question": "این چهره ی چه کسی است؟",
+        "options": [
+        "امیر یاوری",
+        "آرین سلیمی",
+        "بابک معصومی",
+        "امید خالدی"
+        ],
+        "image_url": "https://tse3.mm.bing.net/th/id/OIP.jYgq1FpWPqXFzJozqYAbaAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "آرین سلیمی"
+    },
+    {
+        "question": "این چهره ی چه کسی است و در چه تیمی بازی کرده است؟",
+        "options": [
+        "افشین ناظمی، استقلال",
+        "محمد محمدی، سایپا",
+        "امیر عابدزاده، پرسپولیس",
+        "ابراهیم شکوری، پرسپولیس"
+        ],
+        "image_url": "https://tse1.mm.bing.net/th/id/OIP.HWeitJoEEB6czPH9_vBFnAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "امیر عابدزاده، پرسپولیس"
+    },
+    {
+        "question": "این چهره ی چه کسی است و در چه رشته ای فعالیت میکند؟",
+        "options": [
+        "الهه احمدی، تیراندازی",
+        "زهرا نبیزاده، اسکیت",
+        "ترانه احمدی، تکواندو",
+        "رزیتا علیپور، کاراته"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.57c6d4b5dd95b0ab883305644766e509?rik=pe6okxuixqaihQ&pid=ImgRaw&r=0",
+        "answer": "رزیتا علیپور، کاراته"
+    },
+    {
+        "question": "این چهره ی چه کسی است و در چه رشته ای فعالیت میکند؟",
+        "options": [
+        "حامد حدادی ، بسکتبال",
+        "حسن عسگری ، والیبال",
+        "نیما عالمیان ، شنا",
+        "حامد حدادی ، فوتبال"
+        ],
+        "image_url": "https://tse3.mm.bing.net/th/id/OIP.1SroD7i6k-t2T7z7T8ulsAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "حامد حدادی ، بسکتبال"
+    },
+    {
+        "question": "این چهره ی چه کسی است و در کجا متولد شده است؟",
+        "options": [
+        "جاسم امیری، تهران",
+        "امیرحسین صابری، شیراز",
+        "بهروز مکوندی، مسجدسلیمان",
+        "بهرام توکلی، تهران"
+        ],
+        "image_url": "https://tse1.mm.bing.net/th/id/OIP.nU_OzOvZ6YmVGsrnEwkJfAHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "بهروز مکوندی، مسجدسلیمان"
+    },
+    {
+        "question": "این فرد چه کسی است و در چه تیمی بازی کرده است؟",
+        "options": [
+        "الهام حسنی سپاهان",
+        "بهاره قادریان پرسپولیس",
+        "زهره کودایی سپاهان",
+        "مریم یوسفی پرسپولیس"
+        ],
+        "image_url": "https://tse1.mm.bing.net/th/id/OIP.99bDP9MqeM01dUFJwcS5JQHaGL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"زهره کودایی سپاهان"
+    },
+    {
+        "question": "این فرد چه کسی است؟",
+        "options": [
+        "رضا یزدانی",
+        "داوود فنایی",
+        "حمید درخشان",
+        "حسین کریمی"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.0041d3d9cef0a1d121c4a610b90e36cc?rik=e5XMOU%2bP0YtBKw&riu=http%3a%2f%2fwww.parvaresheafkar.com%2fwp-content%2fuploads%2f2018%2f07%2fReza-Yazdani-24.jpg&ehk=6pBqo35rfX9r5HqlOSJJk06OEYe57NejQEbzbs%2fMfiQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "answer":"رضا یزدانی"
+    },
+    {
+        "question": "این فرد چه کسی است و در چه رشته ای بازی میکند؟",
+        "options": [
+        "رضا حقیقی فوتبال",
+        "سبحان روحی کشتی",
+        "رضا حقیقی والیبال",
+        "ایرج سلیمانی فوتبال"
+        ],
+        "image_url": "https://tse1.mm.bing.net/th/id/OIP.UnmNcdG5ULdYoUDye-VChAHaFG?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"رضا حقیقی فوتبال"
+    },
+    {
+        "question": "این فرد چه کسی است و در کجا متولد شده است؟",
+        "options": [
+        "سینا عشوری اصفهان",
+        "آریا برزگر شیراز",
+        "فرشاد احمدزاده ارومیه",
+        "ارسلان مطهری گرمسار"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.187bbebdf8a9c7f626a0337b6229ccec?rik=uKkLXodBbhlH9Q&pid=ImgRaw&r=0",
+        "answer":"فرشاد احمدزاده ارومیه"
+    },
+    {
+        "question": "فردی که در تصویر است چه کسی است در چه تیم هایی بازی کرده است؟",
+        "options": [
+        "علیرضا منصوریان بالستیر گیلانگ",
+        "علیرضا منصوریان پارس شتاتآیزن",
+        "سجاد انوشیروانی النصر کشاورز",
+        "شایان قاسمی بالستیر نساجی"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.70cd6788173c6370fe61bee178841b79?rik=vVEsG%2b4ek8FsVw&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "answer":"علیرضا منصوریان بالستیر گیلانگ"
+    },
+    {
+        "question": "این استادبزرگ شطرنج در کجا متولد  شده است؟",
+        "options": [
+        "بابل",
+        "شیراز",
+        "تهران",
+        "اصفهان"
+        ],
+        "image_url": "https://tse3.mm.bing.net/th/id/OIP.y9VAAtWqiE2cGNB1H_2jXAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"تهران"
+    },
+    {
+        "question": "نام و رشته ی ورزشی این فرد چیست؟",
+        "options": [
+        "آرین غلامی فوتبال",
+        "آریا داوری کشتی",
+        "آریا داوری وزنه برداری",
+        "وحید کشتکار شنا"
+        ],
+        "image_url": "https://www.wwe.com/f/styles/talent_champion_xl/public/all/2019/12/Ariya_Daivari_Pro--2478ed8b72ef28afc706786f23e365a5.png",
+        "answer":"آریا داوری کشتی"
+    },
+    {
+        "question": "نام و سن این فرد چیست؟",
+        "options": [
+        "سعید شیرود قربانی 34 سال",
+        "حمید استیلی 44 سال",
+        "علی علیپور 29 سال",
+        "علی کریمی 46 سال"
+        ],
+        "image_url": "https://tse3.mm.bing.net/th/id/OIP.O4akfyyFPkQpa0cF-ZwdhgHaEl?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"علی علیپور 29 سال"
+    },
+    {
+        "question": "فردی که در تصویر است چه کسی است؟",
+        "options": [
+        "حجت صدقی",
+        "علی کریمی",
+        "علی شفیعی",
+        "حسن اکرمی"
+        ],
+        "image_url": "https://tse2.mm.bing.net/th/id/OIP.gvGKE6y8v7rzVLqEg-Q1ngHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"علی شفیعی"
+    },
+    {
+        "question": "نام و رشته ی ورزشی این فرد چیست؟",
+        "options": [
+        "الهام قنبروف فوتبال",
+        "الهام فلاح والیبال",
+        "زهره کودایی فوتبال",
+        "مریم یوسفی شنا"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.27d5e77674dd8e33a13543d12cc74c14?rik=eki3Mdcb%2fEyL7Q&pid=ImgRaw&r=0",
+        "answer":"الهام فلاح والیبال"
+    },
+    {
+        "question": "کدام گزینه درباره ی این فرد صحیح است؟",
+        "options": [
+        "این فرد علی انصاریان است و در تیم استقلال بازی کرده است.",
+        "این فرد کریم انصاری فرد است و در اصفهان به دنیا آمده است.",
+        "این فرد وریا غفوری است و در شنا فعالیت دارد.",
+        "این فرد سروش رفیعی است و در تیم سپاهان بازی کرده است."
+        ],
+        "image_url": "https://tse1.mm.bing.net/th/id/OIP.El10jtpn4kDl1xtsd8MSFQHaHI?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "این فرد علی انصاریان است و در تیم استقلال بازی کرده است."
+    }
+    ,
+    {
+        "question": "این چهره ی چه کسی است و در کجا متولد شده است؟",
+        "options": [
+        "احسان علوانزاده خوزستان",
+        "اشکان دژاگه تهران",
+        "سردار آزمون گنبد کاووس",
+        "سردار آزمون شیراز"
+        ],
+        "image_url": "https://tse2.mm.bing.net/th/id/OIP.uTkBFD_F0Uj8GWPZLaAyegHaER?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer":"سردار آزمون گنبد کاووس"
+    },
+    {
+        "question":"نام و رشته ی ورزشی این فرد چیست؟",
+        "options": [
+        "رامین رضاییان فوتبال",
+        "رامین رضاییان کشتی",
+        "کاوه رضایی والیبال",
+        "محمدعلیرضایی شنا"
+        ],
+        "image_url": "https://tse4.mm.bing.net/th/id/OIP.yCtnWvn5riSF3HrY-wsCBAHaFa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "answer": "رامین رضاییان فوتبال"
+    },
+    {
+        "question":"این چهره ی چه کسی است؟",
+        "options": [
+        "رحمان رضایی",
+        "رحمان احمدی",
+        "عاقل حبیبیان",
+        "قربان بردیف"
+        ],
+        "image_url": "https://th.bing.com/th/id/R.c2a19d01aaae453d47e53eee49d895f1?rik=Z2Z5Yj%2f3vNBkvA&pid=ImgRaw&r=0",
+        "answer": "رحمان احمدی"
+    }
+    
+]
