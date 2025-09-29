@@ -33,6 +33,7 @@ It builds **text & image indexes** (SentenceTransformers + OpenCLIP), performs *
 * [Model & Data Licenses](#model--data-licenses)
 * [Citation](#citation)
 * [Acknowledgments](#acknowledgments)
+* [Team](#Team)
 
 ---
 
@@ -426,7 +427,7 @@ If you use this repo, please cite:
 ```bibtex
 @software{iranian_athlete_multimodal_mcq_rag_2025,
   title        = {Iranian Athlete Multimodal MCQ RAG},
-  author       = {Sina Z. and collaborators},
+  author       = {Beyrami, Sina and Daneshgar, Sina and Zahiri, Elahe},
   year         = {2025},
   url          = {https://github.com/<your-org>/<your-repo>},
   note         = {Multimodal retrieval-augmented generation for Persian MCQs about athletes}
@@ -446,3 +447,11 @@ If you use this repo, please cite:
 
 * This README mirrors the end-to-end notebook so you can **run and reproduce** results with your own dataset layout.
 * For contributions, consider refactoring the notebook into a small Python package (modules for `data`, `embed`, `index`, `retrieve`, `eval`, and `generate`) with CLI entry points.
+
+---
+
+## Team
+
+- **Sina Beyrami** — Lead engineering & pipeline integration  
+- **Sina Daneshgar** — Retrieval & evaluation framework  
+- **Elahe Zahiri** — Data curation, normalization & analysis
